@@ -1,0 +1,470 @@
+<!DOCTYPE html> 
+<html lang="ru"> 
+<head> 
+	<meta charset="UTF-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+	<link rel="shortcut icon" href="images/favicon.ico"> 
+	<link rel="stylesheet" href="style.css"> 
+	<title></title> 
+</head> 
+<body class="home"> 
+ 
+<header class="header" data-scroll-lock-fill-gap> 
+	<div class="container">
+		<div class="header__inner">
+			<span class="header__navi-open"></span>
+			<div class="header__navi-underlay"></div>
+			<a href="./" class="header__logo"><img src="./images/logo.png" alt=""></a>
+			<nav class="header__navi navi" data-scroll-lock-scrollable>
+				<span class="navi__head"></span>
+				<ul class="navi__menu">
+					<li class="navi__menu-item navi__menu-item_menu"><a href="./">Меню</a>
+						<ul class="navi__submenu">
+							<li class="navi__submenu-item navi__submenu-item_soup"><a href="./" data-modal="subscribe">Супы</a></li>
+							<li class="navi__submenu-item navi__submenu-item_hach"><a href="./" data-modal="recovery">Хачапури</a></li>
+							<li class="navi__submenu-item navi__submenu-item_snack"><a href="./">Холодные закуски</a></li>
+							<li class="navi__submenu-item navi__submenu-item_hink"><a href="./">Хинкали</a></li>
+							<li class="navi__submenu-item navi__submenu-item_shash"><a href="./">Шашлык</a></li>
+							<li class="navi__submenu-item navi__submenu-item_sauce"><a href="./">Соусы</a></li>
+							<li class="navi__submenu-item navi__submenu-item_salad"><a href="./">Салаты</a></li>
+							<li class="navi__submenu-item navi__submenu-item_hot"><a href="./">Горячие блюда</a></li>
+							<li class="navi__submenu-item navi__submenu-item_garnish"><a href="./">Гарнир</a></li>
+							<li class="navi__submenu-item navi__submenu-item_dessert"><a href="./">Десерты</a></li>
+							<li class="navi__submenu-item navi__submenu-item_drink"><a href="./">Напитки</a></li>
+						</ul>
+					</li>
+					<li class="navi__menu-item navi__menu-item_delivery"><a href="./article.html">Доставка</a></li>
+					<li class="navi__menu-item navi__menu-item_payment"><a href="./article.html">Оплата</a></li>
+					<li class="navi__menu-item navi__menu-item_vacancy"><a href="./vacancy.html">Вакансии</a></li>
+					<li class="navi__menu-item navi__menu-item_helpdesk"><a href="./contact.html">Поддержка</a></li>
+					<li class="navi__menu-item navi__menu-item_booking"><a href="#" data-modal="booking">Бронь стола</a></li>
+				</ul>
+			</nav>
+			<a href="tel:+78312826000" class="header__tel"><span>+7 (831) 282-60-00</span></a>
+			<a href="./profile.html" class="header__account"></a>
+			<a href="./cart.html" class="header__cart" data-count="2"></a>
+		</div>
+	</div>
+</header>
+ 
+
+<section class="profile">
+	<div class="container">
+		<div class="profile__inner tab">
+			<div class="profile__tab-buttons tab__buttons">
+				<button class="profile__tab-button tab__button active">Личные данные</button>
+				<button class="profile__tab-button tab__button">История заказов</button>
+			</div>
+			<div class="tab__items">
+				<form action="./" class="profile__form tab__item tab__item_flex active">
+					<div class="profile__left">
+						<h2 class="profile__title">Персональная информация</h2>
+						<div class="profile__photo">
+							<div class="profile__image">
+								<!-- <img src="" alt=""> -->
+							</div>
+							<label class="profile__image-upload" for="profile__upload">
+								Загрузить фотографию
+								<input type="file" name="" id="profile__upload">
+							</label>
+						</div>
+						<div class="profile__form-row">
+							<div class="profile__field">
+								<span>Ваше имя</span>
+								<input class="profile__input" type="text" placeholder="Имя">
+							</div>
+							<div class="profile__field">
+								<span>Ваша фамилия</span>
+								<input class="profile__input" type="text" placeholder="Фамилия">
+							</div>
+						</div>
+						<div class="profile__field">
+							<span>Ваше отчество</span>
+							<input class="profile__input profile__input_thrid" type="text" placeholder="Отчество">
+						</div>
+						<div class="profile__field">
+							<span>Адрес электронной почты</span>
+							<input class="profile__input" type="email" placeholder="Email">
+						</div>
+					</div>
+					<div class="profile__right">
+						<h2 class="profile__title">Контактная информация <span>(подтверждение заказов)</span></h2>
+						<div class="profile__form-row">
+							<div class="profile__field">
+								<span>Основной телефон</span>
+								<input class="profile__input" type="text" placeholder="+380">
+							</div>
+							<div class="profile__field">
+								<span>Дополнительный</span>
+								<input class="profile__input" type="text" placeholder="+380">
+							</div>
+						</div>
+						<h2 class="profile__title">Изменение пароля</h2>
+						<div class="profile__field">
+							<span>Ваш старый пароль</span>
+							<input class="profile__input" type="password" placeholder="Отчество">
+						</div>
+						<div class="profile__field">
+							<span>Ваш новый пароль</span>
+							<input class="profile__input" type="password" placeholder="Отчество">
+						</div>
+						<div class="profile__field">
+							<span>Подтверждение</span>
+							<input class="profile__input" type="password" placeholder="Отчество">
+						</div>
+						<input class="profile__submit" type="submit" value="Сохранить изменения">
+					</div>
+				</form>
+				<div class="profile__history tab__item">
+					<div class="story profile__history-item">
+	<div class="story__info">
+		<p class="story__info-entry story__info-entry_num">Номер заказа: <span>Заказ № 2334678954</span></p>
+		<p class="story__info-entry">Способ оплаты: <span>Банковская карта</span></p>
+		<p class="story__info-entry">Дата заказа: <span>19.05.2020</span></p>
+		<p class="story__info-entry">Дата доставки: <span>23.05.2020</span></p>
+
+		
+			<p class="story__info-entry story__info-entry_green">Статус заказа: <span>Доставлен</span></p>
+		
+
+		
+
+	</div>
+	<div class="story__order">
+		<span class="story__order-back">Заказ № 2334678954</span>
+		<div class="story__order-items">
+			<div class="story__order-item">
+				<div class="story__order-image">
+					<!-- <img src="" alt=""> -->
+				</div>
+				<span class="story__order-name">Хачапури</span>
+				<div class="story__order-counter">1шт</div>
+				<span class="story__order-price">350 ₽</span>
+			</div>
+			<div class="story__order-item">
+				<div class="story__order-image">
+					<!-- <img src="" alt=""> -->
+				</div>
+				<span class="story__order-name">Хинкали</span>
+				<div class="story__order-counter">1шт</div>
+				<span class="story__order-price">300 ₽</span>
+			</div>
+		</div>
+
+		
+			<a href="./" class="story__order-repeat">Повторить заказ</a>
+		
+	</div>
+</div>
+					<div class="story profile__history-item">
+	<div class="story__info">
+		<p class="story__info-entry story__info-entry_num">Номер заказа: <span>Заказ № 2334678954</span></p>
+		<p class="story__info-entry">Способ оплаты: <span>Банковская карта</span></p>
+		<p class="story__info-entry">Дата заказа: <span>19.05.2020</span></p>
+		<p class="story__info-entry">Дата доставки: <span>23.05.2020</span></p>
+
+		
+
+		
+			<p class="story__info-entry story__info-entry_red">Статус заказа: <span>Отменен</span></p>
+		
+
+	</div>
+	<div class="story__order">
+		<span class="story__order-back">Заказ № 2334678954</span>
+		<div class="story__order-items">
+			<div class="story__order-item">
+				<div class="story__order-image">
+					<!-- <img src="" alt=""> -->
+				</div>
+				<span class="story__order-name">Хачапури</span>
+				<div class="story__order-counter">1шт</div>
+				<span class="story__order-price">350 ₽</span>
+			</div>
+			<div class="story__order-item">
+				<div class="story__order-image">
+					<!-- <img src="" alt=""> -->
+				</div>
+				<span class="story__order-name">Хинкали</span>
+				<div class="story__order-counter">1шт</div>
+				<span class="story__order-price">300 ₽</span>
+			</div>
+		</div>
+
+		
+	</div>
+</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<footer class="footer"> 
+	<div class="container">
+		<div class="footer__top">
+			<div class="footer__contact">
+				<div class="footer__contact-left">
+					<div class="footer__phone">
+						<span>Бесплатный звонок по РФ</span>
+						<a href="tel:+78312826000">+7 (831) 282-60-00</a>
+					</div>
+					<div class="footer__phone">
+						<span>Для приема заказов</span>
+						<a href="tel:+79040664685">+7 (904) 066-46-85</a>
+					</div>
+				</div>
+				<div class="footer__contact-right">
+					<div class="footer__schedule">График работы по будням с 9:00 до 18:00</div>
+					<a href="mailto:info@.ru" class="footer__email">Email: info@.ru</a>
+				</div>
+			</div>
+			<div class="footer__social">
+				<a href="./">Мы в вконтакте ></a>
+				<a href="./">Мы в instagram ></a>
+			</div>
+			<div class="footer__account">
+				<a href="./" class="footer__login" data-modal="login">Войти</a>
+				<span>/</span>
+				<a href="./" class="footer__reg" data-modal="registration">Регистрация</a>
+			</div>
+		</div>
+		<div class="footer__bottom">
+			<a href="./contact.html" class="footer__helpdesk">Поддержка</a>
+			<div class="footer__small">
+				<span>&copy;2020 Пиросмани</span>
+				<a href="./" data-modal="confirm">Условия и соглашения</a>
+				<a href="./">Политика конфиденциальности</a>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<div class="panel">
+	<div class="panel__desk">
+		<a href="./" class="panel__button panel__button_home active"></a>
+		<a href="./" class="panel__button panel__button_search"></a>
+		<a href="./" class="panel__button panel__button_cart" data-count="2"></a>
+		<a href="./" class="panel__button panel__button_profie"></a>
+	</div>
+	<div class="panel__body">
+		<div class="panel__content" data-scroll-lock-scrollable>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est optio esse perspiciatis accusamus laborum cupiditate, consectetur soluta dolor commodi assumenda aliquid aliquam. Quis molestiae quisquam soluta voluptatum illum earum cumque doloremque accusantium voluptatem. Vitae ducimus expedita esse repellendus in repellat. Suscipit, recusandae quisquam vel pariatur ullam cum rem quam voluptates modi ea expedita tenetur quas at aut ducimus perspiciatis.</p> 
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit officia odit eum ea, iusto deleniti sunt deserunt delectus porro dolores, voluptas magni? Pariatur eaque minima consequuntur placeat sint nihil tempore non recusandae accusamus aspernatur voluptate tempora ipsum, dolorem nulla repellendus voluptatibus excepturi nostrum dolore quis illum? At delectus consequatur fugiat cumque modi praesentium maiores illum quo. Nisi placeat repellat quia?</p>
+		</div>
+		<div class="panel__content" data-scroll-lock-scrollable>
+			<div class="cart__inner">
+	<div class="cart__left">
+		<h1 class="cart__title title">Корзина</h1>
+		<div class="cart__items">
+			<div class="item cart__item">
+	<span class="item__remove"></span>
+	<div class="item__image">
+		<!-- <img src="" alt=""> -->
+	</div>
+	<span class="item__name">Хачапури</span>
+	<div class="counter item__counter" data-unit="Ед. изм. - шт.">
+	<span class="counter__minus" href="#">&ndash;</span>
+	<input class="counter__value" type="text" value="1 шт." maxlength="10" />
+	<span class="counter__plus" href="#">&plus;</span>
+</div>
+
+	<span class="item__price">350 ₽</span>
+</div>
+<div class="item cart__item">
+	<span class="item__remove"></span>
+	<div class="item__image">
+		<!-- <img src="" alt=""> -->
+	</div>
+	<span class="item__name">Хачапури с сухариками</span>
+	<div class="counter item__counter" data-unit="Ед. изм. - упаковка.">
+	<span class="counter__minus" href="#">&ndash;</span>
+	<input class="counter__value" type="text" value="1 шт." maxlength="10" />
+	<span class="counter__plus" href="#">&plus;</span>
+</div>
+
+	<span class="item__price">350 ₽</span>
+</div>
+<div class="item cart__item">
+	<span class="item__remove"></span>
+	<div class="item__image">
+		<!-- <img src="" alt=""> -->
+	</div>
+	<span class="item__name">Хинкали</span>
+	<div class="counter item__counter" data-unit="Ед. изм. - шт.">
+	<span class="counter__minus" href="#">&ndash;</span>
+	<input class="counter__value" type="text" value="1 шт." maxlength="10" />
+	<span class="counter__plus" href="#">&plus;</span>
+</div>
+
+	<span class="item__price">300 ₽</span>
+</div>
+
+		</div>
+		<div class="cart__promo cart__promo_hidden">
+			<h2 class="cart__promo-title">Промокод</h2>
+			<form action="./" class="cart__promo-form">
+				<input class="cart__promo-input" type="text" placeholder="Введите промокод">
+				<input class="cart__promo-submit" type="submit" value="Подтвердить">
+			</form>
+		</div>
+
+		<div class="purchase cart__purchase">
+	<h2 class="purchase__title">Закажите на 3000 RUB и получите</h2>
+	<div class="purchase__case purchase__case_bonus">30 RUB <span>на бонусный счет</span></div>
+	<div class="purchase__case purchase__case_delivery">Бесплатная доставка</div>
+	<div class="purchase__range" data-min="0" data-max="3000">
+		<div class="purchase__range-line">
+			<div class="purchase__range-filled" style="width: 70%;"></div>
+			<div class="purchase__range-round" data-point="1000 (минимальный заказ)"></div>
+		</div>
+	</div>
+	<div class="purchase__range-text">Осталось <span>1988 RUB</span> до бесплатной доставки</div>
+</div> 
+	</div>
+	<div class="cart__right">
+		<div class="cart__order">
+			<h2 class="cart__order-title">Заказ №47593</h2>
+			<div class="cart__order-entry"><span>Товаров в корзине</span> <span>700 ₽</span></div>
+			<div class="cart__order-entry cart__order-entry_green"><span>Промокод</span> <span>-100 ₽</span></div>
+			<div class="cart__order-total">
+				<span>Итого к оплате</span>
+				<span>600 ₽</span>
+			</div>
+			<a href="./order.html" class="cart__order-button">Оформить заказ</a>
+		</div>
+		<div class="cart__promo">
+			<h2 class="cart__promo-title">Промокод</h2>
+			<form action="./" class="cart__promo-form">
+				<input class="cart__promo-input" type="text" placeholder="Введите промокод">
+				<input class="cart__promo-submit" type="submit" value="Подтвердить">
+			</form>
+		</div>
+
+	</div>
+</div>
+
+		</div>
+		<div class="panel__content" data-scroll-lock-scrollable>
+			Quia adipisci quibusdam, cumque exercitationem molestias fugit quos recusandae? Molestias voluptatum optio tenetur similique nulla doloribus ab eveniet in quas aliquam dolor inventore, mollitia commodi? Pariatur voluptatum voluptate quibusdam sit, saepe explicabo odit tempora suscipit rerum porro aut incidunt, veniam labore dolores, neque perferendis maxime ex in aliquam praesentium quis repellat ullam atque. Animi quod ipsam expedita. Vero possimus. 
+		</div>
+		<span class="panel__close"></span>
+	</div>
+</div> 
+<div class="modal__hidden" id="login">
+	<h2 class="modal__title">Войти в личный кабинет</h2>
+	<form class="modal__form" action="./">
+		<input class="modal__input modal__input_tel" type="text" placeholder="Телефон">
+		<input class="modal__input modal__input_pass" type="text" placeholder="Пароль">
+		<span class="modal__error">Не правильный логин или пароль.</span>
+		<a href="./" class="modal__forgot">Забыли пароль?</a>
+		<input class="modal__submit" type="submit" value="Войти">
+	</form>
+	<div class="modal__note">Впервые у нас? <a href="./" data-modal="registration">Зарегистрироваться</a></div>
+</div>
+
+<div class="modal__hidden" id="registration">
+	<h2 class="modal__title">Регистрация</h2>
+	<form class="modal__form" action="./">
+		<input class="modal__input modal__input_tel" type="text" placeholder="Телефон">
+		<input class="modal__input modal__input_pass" type="text" placeholder="Пароль">
+		<input class="modal__input modal__input_pass" type="text" placeholder="Подтвердить пароль">
+		<span class="modal__error">Пользователь с таким номером телефона уже зарегистрирован.</span>
+		<div class="modal__checkbox">
+			<label>
+				<input type="checkbox" name="">
+				<span></span>
+			</label>
+			<span>Хочу получать выгодные предложения от магазина</span>
+		</div>
+		<div class="modal__checkbox">
+			<label>
+				<input type="checkbox" name="">
+				<span></span>
+			</label>
+			<span>Принимаю условия <a href="./">Пользовательского соглашения,</a> <a href="./">Политики конфиденциальности</a></span>
+		</div>
+		<input class="modal__submit" type="submit" value="Зарегистрироваться">
+	</form>
+</div>
+
+<div class="modal__hidden" id="subscribe">
+	<h2 class="modal__title">Подпишитесь на нашу рассылку и получите промокод на 500 RUB!</h2>
+	<form class="modal__form" action="./">
+		<input class="modal__input modal__input_email" type="email" placeholder="Email">
+		<input class="modal__submit" type="submit" value="Отправить">
+	</form>
+</div>
+
+<div class="modal__hidden" id="recovery">
+	<h2 class="modal__title">Восстановление пароля</h2>
+	<form class="modal__form" action="./">
+		<input class="modal__input modal__input_tel" type="text" placeholder="Телефон">
+		<input class="modal__input modal__input_pass" type="text" placeholder="Новый пароль (мин. 6 символов)">
+		<input class="modal__input modal__input_pass" type="text" placeholder="Подтвердить пароль">
+		<span class="modal__error">Такой телефон не найден.</span>
+		<input class="modal__cancel" type="reset" value="Отменить">
+		<input class="modal__submit" type="submit" value="Обновить пароль">
+	</form>
+</div>
+
+<div class="modal__hidden" id="feedback">
+	<h2 class="modal__title modal__title_left">Добавить отзыв</h2>
+	<form class="modal__form" action="./">
+		<div class="modal__row modal__row_feedback">
+			<span>Ваша оценка</span>
+			<div class="modal__rating"></div>
+		</div>
+		<div class="modal__row modal__row_feedback">
+			<span>Вашe имя</span>
+			<input class="modal__input" type="text" name="" placeholder="Введите ваше имя">
+		</div>
+		<div class="modal__row modal__row_feedback">
+			<span>Ваш отзыв</span>
+			<textarea class="modal__text" name=""></textarea>
+		</div>
+		<input class="modal__submit" type="submit" value="Добавить отзыв">
+	</form>
+</div>
+
+<div class="modal__hidden" id="booking">
+	<h2 class="modal__title modal__title_left">Бронирование стола</h2>
+	<form class="modal__form" action="./">
+		<input class="modal__input" type="text" name="" placeholder="Имя">
+		<div class="modal__row modal__row_booking">
+			<input class="modal__input" type="text" name="" placeholder="+380">
+			<input class="modal__input" type="text" name="" placeholder="Количество человек">
+		</div>
+		<div class="modal__row modal__row_booking">
+			<input class="modal__input" type="text" name="" placeholder="Время: _ _ : _ _">
+			<input class="modal__input modal__input_date" type="date" name="" placeholder="Дата: дд.мм.гг">
+		</div>
+		<input class="modal__submit" type="submit" value="Забронировать">
+	</form>
+</div>
+
+<div class="modal__hidden" id="confirm">
+	<h2 class="modal__title">Подтвердите номер телефона</h2>
+	<form class="modal__form active" action="./">
+		<div class="modal__row">
+			<input class="modal__input" type="text">
+			<span></span>
+			<input class="modal__input" type="text">
+			<span></span>
+			<input class="modal__input" type="text">
+			<span></span>
+			<input class="modal__input" type="text">
+		</div>
+		<div class="modal__repeat">
+			<a href="./">Отправить повторно</a>
+			<span>1:59</span>
+		</div>
+		<input class="modal__submit" type="submit" value="Далее">
+	</form>
+</div>
+ 
+
+<script type="text/javascript" charset="utf-8" src="jquery.min.js"></script>
+<script src="common.js"></script> 
+</body> 
+</html>
